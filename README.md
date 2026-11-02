@@ -110,14 +110,13 @@ Replace the complete existing `Data/modules/runyth-pet-command` directory, resta
 ## Development and reproducible release
 
 ```text
-npm test
-npm run validate
-npm run benchmark
-python tools/build_release.py
-python tools/verify_release.py dist
+npm ci --ignore-scripts
+npm run check
 ```
 
-The builder creates separate source, installation-only, and documentation/evidence ZIP archives with deterministic timestamps and file ordering.
+`npm run check` runs the complete quality gate: manifest, URL, and package validation, the full test suite, deterministic packaging, and the byte-identical rebuild verification with the publication scan. The builder creates separate installation, source, and documentation archives with fixed timestamps plus per-arch-version checksums, and every artifact set is re-verified by a second, byte-identical build.
+
+Individual development validators remain available: `node tools/validate.mjs` and `node tools/benchmark.mjs`. Dev tooling is never shipped inside the installation archive.
 
 ## Licence
 
