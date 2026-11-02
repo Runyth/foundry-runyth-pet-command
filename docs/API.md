@@ -1,9 +1,9 @@
-# Pet Command v1.3.0 Public API
+# Runyth Pet Command v1.3.0 Public API
 
 Access the API through:
 
 ```text
-game.modules.get("pet-command")?.api
+game.modules.get("runyth-pet-command")?.api
 ```
 
 API version: `1.3.0`.

@@ -7,9 +7,9 @@ import { PetCommandStore } from "../scripts/store.mjs";
 function withMockGame(callback) {
   const previousGame = globalThis.game;
   const values = new Map([
-    ["pet-command.configuration", { ...DEFAULT_CONFIG }],
-    ["pet-command.state", createEmptyState("2026-08-03T00:00:00.000Z")],
-    ["pet-command.backups", { entries: [] }],
+    ["runyth-pet-command.configuration", { ...DEFAULT_CONFIG }],
+    ["runyth-pet-command.state", createEmptyState("2026-08-03T00:00:00.000Z")],
+    ["runyth-pet-command.backups", { entries: [] }],
   ]);
   const writes = [];
   globalThis.game = {

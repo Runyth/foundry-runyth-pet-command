@@ -2,14 +2,14 @@
   "PETCOMMAND": {
     "Settings": {
       "ManagerName": "Pet-Command-Verwaltung",
-      "ManagerLabel": "Pet Command öffnen",
+      "ManagerLabel": "Runyth Pet Command öffnen",
       "ManagerHint": "Haustiere, Beziehungen, Befehle, Verhaltenstabellen und portable Daten verwalten.",
-      "ConfigurationName": "Pet Command – Lernen und Würfe",
+      "ConfigurationName": "Runyth Pet Command – Lernen und Würfe",
       "ConfigurationLabel": "Lernen und Würfe konfigurieren",
       "ConfigurationHint": "EP-Vergabe, Lernkurve, Würfelschwellen, Bewegung, Chat-Sichtbarkeit und Sicherungen konfigurieren."
     },
     "Controls": {
-      "Open": "Pet Command öffnen",
+      "Open": "Runyth Pet Command öffnen",
       "OpenPlayer": "Tierbefehle öffnen",
       "OpenOwnerPerspective": "Tierbefehle als ausgewählten Akteur öffnen"
     },
@@ -282,7 +282,7 @@
       "ImportFileRequired": "Wähle eine zu importierende JSON-Datei.",
       "InvalidJson": "Die ausgewählte Datei enthält kein gültiges JSON.",
       "InvalidXp": "EP müssen eine endliche Zahl von null oder größer sein.",
-      "MigrationFailed": "Pet Command konnte die gespeicherten Daten nicht normalisieren. Exportiere oder prüfe die Welteinstellung, bevor du fortfährst.",
+      "MigrationFailed": "Runyth Pet Command konnte die gespeicherten Daten nicht normalisieren. Exportiere oder prüfe die Welteinstellung, bevor du fortfährst.",
       "OwnerRequired": "Wähle mindestens einen Besitzer.",
       "PetActorRequired": "Wähle einen Haustier-Akteur.",
       "PetProfileMissing": "Das Tierprofil fehlt.",

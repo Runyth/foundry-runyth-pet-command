@@ -1,6 +1,6 @@
 # Configuration — v1.3.0
 
-Global configuration remains in Foundry **Configure Settings → Module Settings → Pet Command**.
+Global configuration remains in Foundry **Configure Settings → Module Settings → Runyth Pet Command**.
 
 ## Learning and obedience
 
@@ -36,4 +36,4 @@ The permission to expose random-target pool choices is relationship data and is 
 
 ## Language
 
-Pet Command follows Foundry's normal **Core Settings → Language Preference** and does not add a module-specific language selector.
+Runyth Pet Command follows Foundry's normal **Core Settings → Language Preference** and does not add a module-specific language selector.

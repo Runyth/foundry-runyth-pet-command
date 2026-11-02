@@ -56,7 +56,7 @@ Random **Snap at target** remains behaviour only. It does not silently invoke D&
 
 ## Foundry v13 movement pipeline
 
-Pet Command uses the following sequence:
+Runyth Pet Command uses the following sequence:
 
 1. Resolve pet, owner, and effective target tokens in the current Scene.
 2. Calculate a token-size-aware destination.
@@ -67,8 +67,8 @@ Pet Command uses the following sequence:
 7. Compare pre/post coordinates to distinguish full, partial, rejected, and no-op movement.
 8. Only after command movement finishes does a successful **Attack** invoke the configured D&D 5e attack activity.
 
-If pathfinding is unavailable or fails to produce a route, Pet Command lets `TokenDocument.move` perform Foundry's own constrained movement. A document-update fallback is retained only for environments lacking `TokenDocument.move`.
+If pathfinding is unavailable or fails to produce a route, Runyth Pet Command lets `TokenDocument.move` perform Foundry's own constrained movement. A document-update fallback is retained only for environments lacking `TokenDocument.move`.
 
 ## Reliability boundaries
 
-Pet Command does not bypass locked walls, collision rules, movement costs, Scene bounds, or permissions enforced by Foundry/other modules. A constrained route may therefore move only part of the requested distance or be rejected. These outcomes are recorded rather than being disguised as successful full movement.
+Runyth Pet Command does not bypass locked walls, collision rules, movement costs, Scene bounds, or permissions enforced by Foundry/other modules. A constrained route may therefore move only part of the requested distance or be rejected. These outcomes are recorded rather than being disguised as successful full movement.

@@ -1,4 +1,4 @@
-# Pet Command v1.3.0 Architecture
+# Runyth Pet Command v1.3.0 Architecture
 
 ## State model
 

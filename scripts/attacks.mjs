@@ -98,7 +98,7 @@ export async function useDefaultAttack({ profile, relationship, targetTokenId })
     if (result === null) return { used: false, reason: "attack-cancelled", attackLabel: attack.label };
     return { used: true, reason: "used", attackLabel: attack.label, targetName: target.name };
   } catch (error) {
-    console.error("pet-command | Default attack failed", error);
+    console.error("runyth-pet-command | Default attack failed", error);
     return { used: false, reason: "attack-error", attackLabel: attack.label, error: error.message ?? String(error) };
   } finally {
     for (const current of [...(game.user?.targets ?? [])]) current.setTarget(false);

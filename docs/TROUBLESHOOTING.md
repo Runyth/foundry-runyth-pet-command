@@ -15,7 +15,7 @@ A result marked **partial** means Foundry moved the token but constrained the re
 
 ## Attack succeeds but no attack roll
 
-Confirm **Successful Attack uses default** is enabled and the pet profile has a usable D&D 5e Attack activity or a configured default attack. Pet Command moves first and then delegates to the D&D 5e activity workflow.
+Confirm **Successful Attack uses default** is enabled and the pet profile has a usable D&D 5e Attack activity or a configured default attack. Runyth Pet Command moves first and then delegates to the D&D 5e activity workflow.
 
 ## Player cannot see behavior target pools
 
@@ -27,4 +27,4 @@ Version 1.3.0 changes the default for newly created pet profiles. Existing saved
 
 ## Upgrade/runtime caching
 
-Replace the complete `Data/modules/pet-command` directory with the new installation ZIP, restart Foundry, and hard-refresh connected browsers. The module runtime is an explicit `.mjs` graph beginning at `scripts/main.mjs`.
+Replace the complete `Data/modules/runyth-pet-command` directory with the new installation ZIP, restart Foundry, and hard-refresh connected browsers. The module runtime is an explicit `.mjs` graph beginning at `scripts/main.mjs`.

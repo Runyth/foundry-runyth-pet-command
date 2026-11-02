@@ -1,10 +1,10 @@
-# Pet Command v1.3.0 — Delegated Behaviour Targets & Reliable Movement
+# Runyth Pet Command v1.3.0 — Delegated Behaviour Targets & Reliable Movement
 
-**Pet Command** manages party pets in and outside combat in Foundry VTT v13. Version 1.3.0 is additive: the existing GM Manager, player panel, Owner Perspective, relationship XP model, random behaviour system, exports, and D&D 5e attack integration remain intact.
+**Runyth Pet Command** manages party pets in and outside combat in Foundry VTT v13. Version 1.3.0 is additive: the existing GM Manager, player panel, Owner Perspective, relationship XP model, random behaviour system, exports, and D&D 5e attack integration remain intact.
 
 ## Model
 
-Pet Command deliberately separates:
+Runyth Pet Command deliberately separates:
 
 1. **Pet profile** — attitude, weighted d20 random behaviours, GM-owned default random-target pools, movement enablement, and optional default D&D 5e attack.
 2. **Pet–owner relationship** — XP, automatic/manual obedience, history, active/terminated state, and whether that owner Actor may choose random-behaviour target pools from the player panel.
@@ -19,7 +19,7 @@ A pet can have several independent owners. Commands and XP are always attributed
 4. Choose a command and its target when applicable.
 5. Roll obedience against the displayed DC.
 6. On failure, optionally resolve a separate weighted d20 random behaviour.
-7. When movement is applicable and enabled, Pet Command moves the pet using Foundry's token movement APIs.
+7. When movement is applicable and enabled, Runyth Pet Command moves the pet using Foundry's token movement APIs.
 8. A successful explicit **Attack** command moves first, then invokes the configured D&D 5e attack activity.
 
 ## Random-behaviour targets
@@ -85,12 +85,12 @@ The schema-3 migration adds only the relationship permission `playerBehaviourTar
 The installation archive contains one unversioned module root:
 
 ```text
-pet-command-v1.3.0.zip
-└── pet-command/
+runyth-pet-command-v1.3.0.zip
+└── runyth-pet-command/
     └── module.json
 ```
 
-Replace the complete existing `Data/modules/pet-command` directory, restart Foundry, enable **Pet Command**, and hard-refresh connected clients after an upgrade.
+Replace the complete existing `Data/modules/runyth-pet-command` directory, restart Foundry, enable **Runyth Pet Command**, and hard-refresh connected clients after an upgrade.
 
 ## Documentation
 

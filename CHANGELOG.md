@@ -18,7 +18,7 @@
 - Fixed approach movement overshooting when the pet is already adjacent to its owner or target.
 - Added Foundry pathfinding before movement where available, with wall and movement-cost constraints enabled.
 - Added movement-animation awaiting so follow-up attack workflows do not race ahead of the visible token move.
-- Added partial-movement detection: when Foundry constrains a route but still moves the token, Pet Command records the movement as partial rather than rejected.
+- Added partial-movement detection: when Foundry constrains a route but still moves the token, Runyth Pet Command records the movement as partial rather than rejected.
 - Preserved direct Foundry document-update fallback only for environments where `TokenDocument.move` is unavailable.
 - Existing random reactions use the same hardened movement engine, including targeted aggressive actions such as **Snap at target** and **Chase target**.
 - Preserved the combat-safety boundary: random **Snap at target** is movement/behaviour only and does not silently roll an attack or apply damage; only a successful explicit **Attack** command invokes the configured D&D 5e attack workflow.
@@ -29,8 +29,8 @@
 ## 1.2.0 — 2026-08-08
 
 - Added a dedicated **Owner Perspective** for Game Masters and Assistant Game Masters that reuses the lightweight player command workflow without changing Actor ownership or user permissions.
-- Added **Open Pet Commands as Selected Actor** to Token Scene Controls. Exactly one controlled token establishes the acting owner.
-- Added **Issue Pet Commands as this Actor** to Actor Directory context actions.
+- Added **Open Runyth Pet Commands as Selected Actor** to Token Scene Controls. Exactly one controlled token establishes the acting owner.
+- Added **Issue Runyth Pet Commands as this Actor** to Actor Directory context actions.
 - Added an owner-perspective Token HUD control for Actors that currently own at least one active pet relationship.
 - Added an **Open owner perspective** shortcut to every active owner relationship in the GM relationship table.
 - Added fast switching among Actors that currently own active pet relationships inside Owner Perspective.
@@ -46,7 +46,7 @@
 
 ## 1.1.5 — 2026-08-04
 
-- Fixed the reported failure to load `modules/pet-command/scripts/main.js`, which prevented Pet Command from starting.
+- Fixed the reported failure to load `modules/runyth-pet-command/scripts/main.js`, which prevented Runyth Pet Command from starting.
 - Migrated the complete browser runtime graph from ambiguous `.js` module filenames to explicit `.mjs` ES-module filenames.
 - Changed the Foundry manifest entrypoint to the exact path `scripts/main.mjs`.
 - Updated every static runtime import to an explicit relative `.mjs` path with matching filename case.
@@ -71,11 +71,11 @@
 - Replaced realm-sensitive `instanceof File` import validation with a file-like interface check, improving browser and test-environment compatibility.
 - Added complete English and German localization for malformed JSON.
 - Added regression tests and static validation for namespaced exports, cross-realm file handling, expected user-input errors, and guarded form actions.
-- Reviewed the supplied live Foundry log and confirmed that the remaining deprecations and package failures are not emitted by Pet Command.
+- Reviewed the supplied live Foundry log and confirmed that the remaining deprecations and package failures are not emitted by Runyth Pet Command.
 
 ## 1.1.3 — 2026-08-04
 
-- Fixed all Pet Command Manager tab buttons failing with `You must pass both the tab and tab group identifier` under Foundry VTT v13.
+- Fixed all Runyth Pet Command Manager tab buttons failing with `You must pass both the tab and tab group identifier` under Foundry VTT v13.
 - Replaced Foundry's reserved `data-action="tab"` value with the validated module-owned `switch-tab` action.
 - Added an explicit manager-tab allowlist so malformed or third-party-injected tab identifiers are ignored.
 - Preserved conditional tab rendering and the v1.1.2 cached-state architecture without introducing extra settings writes or background work.
@@ -113,7 +113,7 @@
 - Localized ApplicationV2 window titles, fallback Actor labels, import validation, backup errors, and GM-only storage errors.
 - Added explicit English fallbacks for damaged or incomplete third-party translation files.
 - Added localization contributor documentation for extending the module with further languages.
-- Documented that language selection belongs in Foundry's Core Settings rather than the Pet Command dashboard or module-specific settings.
+- Documented that language selection belongs in Foundry's Core Settings rather than the Runyth Pet Command dashboard or module-specific settings.
 - Added localization regression tests and stronger validation against untranslated application titles and errors.
 - Added a deterministic builder for separate installable and complete source archives.
 

@@ -1,4 +1,4 @@
-# Pet Command v1.3.0 Manual Foundry Test Plan
+# Runyth Pet Command v1.3.0 Manual Foundry Test Plan
 
 Use Foundry v13 with a cloned/test world.
 
@@ -35,7 +35,7 @@ Place pet and owner/targets several squares apart. Verify:
 1. Test 1×1 and larger pet/target tokens; approaching pets should stop adjacent without deliberate overlap.
 2. Start a pet already adjacent; it should not overshoot or move through the target.
 3. Place walls between pet and target; verify movement follows a valid Foundry route when one exists.
-4. Block all valid routes; verify Pet Command does not force the token through the wall.
+4. Block all valid routes; verify Runyth Pet Command does not force the token through the wall.
 5. Test terrain/movement-cost constraints supplied by the world/system/modules.
 6. Verify partial constrained movement is reported as partial rather than rejected.
 

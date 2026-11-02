@@ -28,7 +28,7 @@ A GM or Assistant GM may select an Actor/token and open Owner Perspective. It be
 
 Successful commands now move when their semantics call for movement. Random reactions also use the same hardened movement engine. If an Attack succeeds, movement completes first and the configured D&D 5e attack follows.
 
-If a route is blocked or constrained, Foundry remains authoritative. Pet Command reports a partial or rejected movement instead of forcing the token through invalid geometry.
+If a route is blocked or constrained, Foundry remains authoritative. Runyth Pet Command reports a partial or rejected movement instead of forcing the token through invalid geometry.
 
 ## Relationship administration
 

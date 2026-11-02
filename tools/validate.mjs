@@ -11,12 +11,12 @@ const packageJson = readJson(join(root, "package.json"));
 const english = readJson(join(root, "lang/en.json"));
 const german = readJson(join(root, "lang/de.json"));
 
-assert.equal(manifest.id, "pet-command");
+assert.equal(manifest.id, "runyth-pet-command");
 assert.equal(manifest.version, packageJson.version);
 assert.equal(manifest.compatibility.minimum, "13");
 assert.equal(manifest.compatibility.maximum, "13");
 assert.deepEqual(manifest.esmodules, ["scripts/main.mjs"], "The Foundry entrypoint must be the explicit .mjs bootstrap");
-assert.ok(manifest.styles.includes("styles/pet-command.css"));
+assert.ok(manifest.styles.includes("styles/runyth-pet-command.css"));
 assert.equal(manifest.socket, true);
 
 for (const path of [...manifest.esmodules, ...manifest.styles, ...manifest.languages.map((language) => language.path), manifest.license, manifest.readme]) {

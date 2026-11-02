@@ -1,4 +1,4 @@
-# Pet Command v1.3.0 Code Audit
+# Runyth Pet Command v1.3.0 Code Audit
 
 ## Scope
 

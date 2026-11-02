@@ -1,4 +1,4 @@
-# Pet Command v1.3.0 Feature Release Report
+# Runyth Pet Command v1.3.0 Feature Release Report
 
 ## Objective
 

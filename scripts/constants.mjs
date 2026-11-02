@@ -1,5 +1,5 @@
-export const MODULE_ID = "pet-command";
-export const MODULE_TITLE = "Pet Command";
+export const MODULE_ID = "runyth-pet-command";
+export const MODULE_TITLE = "Runyth Pet Command";
 export const MODULE_VERSION = "1.3.0";
 export const API_VERSION = "1.3.0";
 export const SCHEMA_VERSION = 3;

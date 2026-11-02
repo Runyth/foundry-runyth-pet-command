@@ -1,10 +1,10 @@
 {
   "PETCOMMAND": {
     "Settings": {
-      "ManagerName": "Pet Command Manager",
+      "ManagerName": "Runyth Pet Command Manager",
       "ManagerLabel": "Open Pet Command",
       "ManagerHint": "Manage pets, relationships, commands, behaviour tables, and portable data.",
-      "ConfigurationName": "Pet Command Learning and Rolls",
+      "ConfigurationName": "Runyth Pet Command Learning and Rolls",
       "ConfigurationLabel": "Configure Learning and Rolls",
       "ConfigurationHint": "Configure XP awards, the learning curve, dice thresholds, movement, chat visibility, and backups."
     },
@@ -18,11 +18,11 @@
       "CommandAsActor": "Issue Pet Commands as this Actor"
     },
     "App": {
-      "Navigation": "Pet Command navigation",
-      "ManagerTitle": "Pet Command",
-      "PlayerTitle": "Pet Commands",
-      "ConfigurationTitle": "Pet Command Configuration",
-      "OwnerPerspectiveTitle": "Pet Commands — Owner Perspective"
+      "Navigation": "Runyth Pet Command navigation",
+      "ManagerTitle": "Runyth Pet Command",
+      "PlayerTitle": "Runyth Pet Commands",
+      "ConfigurationTitle": "Runyth Pet Command Configuration",
+      "OwnerPerspectiveTitle": "Runyth Pet Commands — Owner Perspective"
     },
     "Tabs": {
       "Command": "Command",
@@ -282,7 +282,7 @@
       "ImportFileRequired": "Choose a JSON file to import.",
       "InvalidJson": "The selected file is not valid JSON.",
       "InvalidXp": "XP must be a finite number of zero or greater.",
-      "MigrationFailed": "Pet Command could not normalize its stored data. Export or inspect the world setting before continuing.",
+      "MigrationFailed": "Runyth Pet Command could not normalize its stored data. Export or inspect the world setting before continuing.",
       "OwnerRequired": "Select at least one owner.",
       "PetActorRequired": "Select a pet Actor.",
       "PetProfileMissing": "The pet profile is missing.",
@@ -312,8 +312,8 @@
       "TokenSelected": "Selected {name} as the pending pet token.",
       "RelationshipsCreated": "Prepared {count} relationship(s).",
       "ProfileSaved": "Pet profile saved.",
-      "ImportComplete": "Pet Command data imported.",
-      "ConfigurationSaved": "Pet Command configuration saved."
+      "ImportComplete": "Runyth Pet Command data imported.",
+      "ConfigurationSaved": "Runyth Pet Command configuration saved."
     },
     "Confirm": {
       "DeleteTitle": "Delete relationship",

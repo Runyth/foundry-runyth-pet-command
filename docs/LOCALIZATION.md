@@ -1,6 +1,6 @@
 # Localization
 
-Pet Command uses Foundry VTT's standard package-localization mechanism. No custom language switch, dashboard control, or world setting is used.
+Runyth Pet Command uses Foundry VTT's standard package-localization mechanism. No custom language switch, dashboard control, or world setting is used.
 
 ## User language selection
 
@@ -10,12 +10,12 @@ Each user selects a language through Foundry:
 Configure Settings → Core Settings → Language Preference
 ```
 
-Pet Command automatically uses `game.i18n` and therefore follows the selected Foundry language. English is the complete default. German is included as a complete translation.
+Runyth Pet Command automatically uses `game.i18n` and therefore follows the selected Foundry language. English is the complete default. German is included as a complete translation.
 
 ## File structure
 
 ```text
-pet-command/
+runyth-pet-command/
 ├── module.json
 └── lang/
     ├── en.json
@@ -53,7 +53,7 @@ Use a lower-case language code accepted by Foundry. Translation keys are namespa
 
 ## Completeness rule
 
-Every language file distributed by Pet Command must contain the same key set as `lang/en.json`. English remains authoritative for meaning and variable placeholders such as `{count}`, `{dc}`, and `{target}`. Translators must preserve every placeholder exactly.
+Every language file distributed by Runyth Pet Command must contain the same key set as `lang/en.json`. English remains authoritative for meaning and variable placeholders such as `{count}`, `{dc}`, and `{target}`. Translators must preserve every placeholder exactly.
 
 Application titles, buttons, labels, help text, validation errors, notifications, chat summaries, command descriptions, target guidance, and fallback document names all resolve through localization keys. A small explicit English fallback is retained only for damaged or incomplete external translations, preventing raw keys from reaching the interface.
 
