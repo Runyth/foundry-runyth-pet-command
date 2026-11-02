@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (C) 2026 Daniel Braniewski. See the LICENSE file for rights and obligations.
 import { API_VERSION, MODULE_ID, MODULE_TITLE } from "./constants.mjs";
 import { PetCommandConfiguration, PetCommandManager, PetCommandPlayerPanel, configureAppServices } from "./apps.mjs";
 import { normalizeState } from "./model.mjs";

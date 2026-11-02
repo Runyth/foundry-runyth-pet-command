@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (C) 2026 Daniel Braniewski. See the LICENSE file for rights and obligations.
 import assert from "node:assert/strict";
 import test from "node:test";
 import { ACTIONS, ATTITUDE_PRESETS, COMMANDS, DEFAULT_CONFIG, DEFAULT_TARGET_POOLS, SCHEMA_VERSION } from "../scripts/constants.mjs";
