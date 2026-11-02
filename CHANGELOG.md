@@ -2,6 +2,8 @@
 
 ## 1.3.0 — 2026-08-08
 
+- First publication as a Runyth module: `runyth-pet-command` / **Runyth Pet Command** with the publication standard in place — deterministic `-mod`, `-src`, and `-doc` archives with per-version checksums, byte-identical rebuild verification, standard quality and release pipelines, the full GNU AGPL-3.0-or-later licence with the standard source notice, the standard README licence chapter, and the manifest URL surfaces.
+
 - Enabled the **Party members** random-behaviour target pool by default for newly created pet profiles while preserving explicit choices already stored on existing profiles.
 - Added a relationship-scoped GM permission allowing a selected owner Actor to see and choose random-behaviour target pools in the lightweight player command panel.
 - Added the same target-pool controls automatically to privileged Owner Perspective, so a GM or Assistant GM acting as a selected owner can choose them directly.
