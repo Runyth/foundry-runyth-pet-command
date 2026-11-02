@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (C) 2026 Daniel Braniewski. See the LICENSE file for rights and obligations.
 export const MODULE_ID = "runyth-pet-command";
 export const MODULE_TITLE = "Runyth Pet Command";
 export const MODULE_VERSION = "1.3.0";

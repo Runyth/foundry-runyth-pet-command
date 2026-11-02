@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (C) 2026 Daniel Braniewski. See the LICENSE file for rights and obligations.
 import { performance } from "node:perf_hooks";
 import { ATTITUDE_PRESETS, DEFAULT_CONFIG } from "../scripts/constants.mjs";
 import { buildD20Slots, normalizeConfig, normalizeState } from "../scripts/model.mjs";
