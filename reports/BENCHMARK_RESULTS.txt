@@ -1,0 +1,7 @@
+
+> pet-command@1.3.0 benchmark
+> node tools/benchmark.mjs
+
+Cached normalized state read: 4.74 ms total; 0.047 µs/op (100000 iterations)
+Fresh large-state normalization: 615.26 ms total; 6152.579 µs/op (100 iterations)
+Cached weighted d20 table: 69.45 ms total; 0.695 µs/op (100000 iterations)

@@ -1,0 +1,16 @@
+Pet Command 1.3.0 archive validation
+
+Status: PASS
+
+Validated release properties:
+- Source archive integrity and expected versioned root: PASS
+- Installation-only allowlist and unversioned pet-command/ root: PASS
+- Installation manifest version and scripts/main.mjs entrypoint: PASS
+- Recursive .mjs runtime dependency graph inside installation ZIP: PASS
+- No stale scripts/*.js runtime modules in installation ZIP: PASS
+- Documentation/evidence bundle completeness: PASS
+- Source/install runtime byte parity: PASS
+- Deterministic two-pass release rebuild: PASS
+- Clean-extracted source npm test: 51 passed, 0 failed
+- Clean-extracted source npm run validate: PASS
+- Clean-extracted installation entrypoint evaluation: PASS

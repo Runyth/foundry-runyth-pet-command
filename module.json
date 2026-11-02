@@ -1,0 +1,37 @@
+{
+  "id": "pet-command",
+  "title": "Pet Command",
+  "description": "Pet relationship, obedience, delegated player behaviour targeting, reliable command and reaction movement, owner-perspective commands, and D&D 5e attack tools.",
+  "version": "1.3.0",
+  "authors": [
+    {
+      "name": "Runyth"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13.351",
+    "maximum": "13"
+  },
+  "esmodules": [
+    "scripts/main.mjs"
+  ],
+  "styles": [
+    "styles/pet-command.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "de",
+      "name": "Deutsch",
+      "path": "lang/de.json"
+    }
+  ],
+  "license": "LICENSE",
+  "readme": "README.md",
+  "socket": true
+}

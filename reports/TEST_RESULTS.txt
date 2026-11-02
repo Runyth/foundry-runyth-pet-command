@@ -1,0 +1,320 @@
+
+> pet-command@1.3.0 test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: manager navigation never invokes Foundry's reserved tab action
+ok 1 - manager navigation never invokes Foundry's reserved tab action
+  ---
+  duration_ms: 1.092349
+  type: 'test'
+  ...
+# Subtest: manager navigation uses a validated module-owned action
+ok 2 - manager navigation uses a validated module-owned action
+  ---
+  duration_ms: 0.166687
+  type: 'test'
+  ...
+# Subtest: manager tabs expose accessible tab semantics
+ok 3 - manager tabs expose accessible tab semantics
+  ---
+  duration_ms: 0.157764
+  type: 'test'
+  ...
+# Subtest: manager tabs support roving keyboard navigation
+ok 4 - manager tabs support roving keyboard navigation
+  ---
+  duration_ms: 0.479591
+  type: 'test'
+  ...
+# Subtest: every manager navigation button declares button type
+ok 5 - every manager navigation button declares button type
+  ---
+  duration_ms: 0.117864
+  type: 'test'
+  ...
+# Subtest: manager can delegate random-behaviour target controls per relationship
+ok 6 - manager can delegate random-behaviour target controls per relationship
+  ---
+  duration_ms: 0.114049
+  type: 'test'
+  ...
+# Subtest: player command panel exposes transient target-pool controls only when permitted
+ok 7 - player command panel exposes transient target-pool controls only when permitted
+  ---
+  duration_ms: 0.191734
+  type: 'test'
+  ...
+# Subtest: successful default attack rolls against the command target and restores prior targets
+ok 8 - successful default attack rolls against the command target and restores prior targets
+  ---
+  duration_ms: 1.282581
+  type: 'test'
+  ...
+# Subtest: cancelled D&D 5e attack rolls are reported without losing prior targets
+ok 9 - cancelled D&D 5e attack rolls are reported without losing prior targets
+  ---
+  duration_ms: 0.234608
+  type: 'test'
+  ...
+# Subtest: manifest entrypoint imports without an ES-module load failure
+ok 10 - manifest entrypoint imports without an ES-module load failure
+  ---
+  duration_ms: 21.332092
+  type: 'test'
+  ...
+# Subtest: localization helper uses Foundry's active language dictionary
+ok 11 - localization helper uses Foundry's active language dictionary
+  ---
+  duration_ms: 1.147151
+  type: 'test'
+  ...
+# Subtest: localization helper provides an English fallback for a missing translation
+ok 12 - localization helper provides an English fallback for a missing translation
+  ---
+  duration_ms: 0.171134
+  type: 'test'
+  ...
+# Subtest: HTML escaping is allocation-light and complete
+ok 13 - HTML escaping is allocation-light and complete
+  ---
+  duration_ms: 0.184043
+  type: 'test'
+  ...
+# Subtest: obedience rises monotonically with XP
+ok 14 - obedience rises monotonically with XP
+  ---
+  duration_ms: 1.272776
+  type: 'test'
+  ...
+# Subtest: manual obedience overrides and can return to automatic
+ok 15 - manual obedience overrides and can return to automatic
+  ---
+  duration_ms: 0.194828
+  type: 'test'
+  ...
+# Subtest: better relationships have lower DCs
+ok 16 - better relationships have lower DCs
+  ---
+  duration_ms: 0.144334
+  type: 'test'
+  ...
+# Subtest: d20 table always contains exactly twenty result slots
+ok 17 - d20 table always contains exactly twenty result slots
+  ---
+  duration_ms: 0.431009
+  type: 'test'
+  ...
+# Subtest: aggressive preset allocates more threatening results than docile preset
+ok 18 - aggressive preset allocates more threatening results than docile preset
+  ---
+  duration_ms: 0.181068
+  type: 'test'
+  ...
+# Subtest: roll total selects deterministic action slot
+ok 19 - roll total selects deterministic action slot
+  ---
+  duration_ms: 0.152236
+  type: 'test'
+  ...
+# Subtest: multiple owners create independent relationship records
+ok 20 - multiple owners create independent relationship records
+  ---
+  duration_ms: 0.570906
+  type: 'test'
+  ...
+# Subtest: merge import preserves existing and imported relationships
+ok 21 - merge import preserves existing and imported relationships
+  ---
+  duration_ms: 0.360133
+  type: 'test'
+  ...
+# Subtest: aggressive attitude makes attack easier and heel harder
+ok 22 - aggressive attitude makes attack easier and heel harder
+  ---
+  duration_ms: 0.421135
+  type: 'test'
+  ...
+# Subtest: target requirements distinguish quiet from attack
+ok 23 - target requirements distinguish quiet from attack
+  ---
+  duration_ms: 1.004619
+  type: 'test'
+  ...
+# Subtest: new pet profiles include party members in random target pools by default
+ok 24 - new pet profiles include party members in random target pools by default
+  ---
+  duration_ms: 0.270701
+  type: 'test'
+  ...
+# Subtest: relationship normalization adds delegated behaviour-target permission without altering older data
+ok 25 - relationship normalization adds delegated behaviour-target permission without altering older data
+  ---
+  duration_ms: 0.172295
+  type: 'test'
+  ...
+# Subtest: successful attack movement approaches the target without overlapping it
+ok 26 - successful attack movement approaches the target without overlapping it
+  ---
+  duration_ms: 1.716985
+  type: 'test'
+  ...
+# Subtest: approach movement does not overshoot when already adjacent
+ok 27 - approach movement does not overshoot when already adjacent
+  ---
+  duration_ms: 0.318352
+  type: 'test'
+  ...
+# Subtest: movement uses Foundry pathfinding before TokenDocument.move when available
+ok 28 - movement uses Foundry pathfinding before TokenDocument.move when available
+  ---
+  duration_ms: 0.862028
+  type: 'test'
+  ...
+# Subtest: a constrained partial move is reported as movement instead of a false rejection
+ok 29 - a constrained partial move is reported as movement instead of a false rejection
+  ---
+  duration_ms: 0.260696
+  type: 'test'
+  ...
+# Subtest: owner perspective filters active relationships to the selected owner Actor
+ok 30 - owner perspective filters active relationships to the selected owner Actor
+  ---
+  duration_ms: 7.019775
+  type: 'test'
+  ...
+# Subtest: owner perspective is unavailable to ordinary player clients
+ok 31 - owner perspective is unavailable to ordinary player clients
+  ---
+  duration_ms: 0.137964
+  type: 'test'
+  ...
+# Subtest: Assistant-GM-compatible isGM clients can issue a command only for the selected owner
+ok 32 - Assistant-GM-compatible isGM clients can issue a command only for the selected owner
+  ---
+  duration_ms: 0.397439
+  type: 'test'
+  ...
+# Subtest: owner perspective is additive to existing manager and player entrypoints
+ok 33 - owner perspective is additive to existing manager and player entrypoints
+  ---
+  duration_ms: 0.545108
+  type: 'test'
+  ...
+# Subtest: ordinary players cannot invoke the privileged owner-perspective command path
+ok 34 - ordinary players cannot invoke the privileged owner-perspective command path
+  ---
+  duration_ms: 0.440593
+  type: 'test'
+  ...
+# Subtest: owner perspective rejects relationships belonging to another Actor
+ok 35 - owner perspective rejects relationships belonging to another Actor
+  ---
+  duration_ms: 0.21593
+  type: 'test'
+  ...
+# Subtest: delegated random target pools are accepted only for explicitly permitted owner relationships
+ok 36 - delegated random target pools are accepted only for explicitly permitted owner relationships
+  ---
+  duration_ms: 0.335888
+  type: 'test'
+  ...
+# Subtest: normalized configuration and state are reused on repeated reads
+ok 37 - normalized configuration and state are reused on repeated reads
+  ---
+  duration_ms: 1.023807
+  type: 'test'
+  ...
+# Subtest: unchanged weighted d20 tables reuse their frozen allocation
+ok 38 - unchanged weighted d20 tables reuse their frozen allocation
+  ---
+  duration_ms: 0.461134
+  type: 'test'
+  ...
+# Subtest: store getters use cached canonical data and snapshots remain isolated
+ok 39 - store getters use cached canonical data and snapshots remain isolated
+  ---
+  duration_ms: 0.961165
+  type: 'test'
+  ...
+# Subtest: failed command sequence persists obedience and behaviour in one mutation
+ok 40 - failed command sequence persists obedience and behaviour in one mutation
+  ---
+  duration_ms: 2.798679
+  type: 'test'
+  ...
+# Subtest: successful movement-capable command moves before one persistence transaction
+ok 41 - successful movement-capable command moves before one persistence transaction
+  ---
+  duration_ms: 2.508198
+  type: 'test'
+  ...
+# Subtest: failed command random reaction can select a party member and move toward them
+ok 42 - failed command random reaction can select a party member and move toward them
+  ---
+  duration_ms: 1.047773
+  type: 'test'
+  ...
+# Subtest: downloadJson uses the Foundry v13 namespaced file utility
+ok 43 - downloadJson uses the Foundry v13 namespaced file utility
+  ---
+  duration_ms: 2.600996
+  type: 'test'
+  ...
+# Subtest: readJsonFile accepts file-like values without relying on a realm-specific File constructor
+ok 44 - readJsonFile accepts file-like values without relying on a realm-specific File constructor
+  ---
+  duration_ms: 0.210812
+  type: 'test'
+  ...
+# Subtest: readJsonFile reports missing and malformed files as expected user input
+ok 45 - readJsonFile reports missing and malformed files as expected user input
+  ---
+  duration_ms: 0.564808
+  type: 'test'
+  ...
+# Subtest: default failure XP exceeds success XP
+ok 46 - default failure XP exceeds success XP
+  ---
+  duration_ms: 0.563054
+  type: 'test'
+  ...
+# Subtest: zero-weight actions receive no d20 slots when other weights exist
+ok 47 - zero-weight actions receive no d20 slots when other weights exist
+  ---
+  duration_ms: 0.381947
+  type: 'test'
+  ...
+# Subtest: weighted allocation remains a valid d20 table across varied inputs
+ok 48 - weighted allocation remains a valid d20 table across varied inputs
+  ---
+  duration_ms: 3.100366
+  type: 'test'
+  ...
+# Subtest: normalization clamps malformed configuration
+ok 49 - normalization clamps malformed configuration
+  ---
+  duration_ms: 0.231834
+  type: 'test'
+  ...
+# Subtest: terminated state and manual obedience survive normalization
+ok 50 - terminated state and manual obedience survive normalization
+  ---
+  duration_ms: 0.764874
+  type: 'test'
+  ...
+# Subtest: future export schemas are rejected
+ok 51 - future export schemas are rejected
+  ---
+  duration_ms: 0.380765
+  type: 'test'
+  ...
+1..51
+# tests 51
+# suites 0
+# pass 51
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 198.406563

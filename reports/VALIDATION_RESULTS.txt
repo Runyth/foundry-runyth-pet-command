@@ -1,0 +1,9 @@
+
+> pet-command@1.3.0 validate
+> node tools/validate.mjs
+
+Manifest: valid
+Native localization, parity, placeholders, and literal references: valid
+Documentation set: complete
+ES-module entrypoint, recursive import graph, and syntax: valid
+ApplicationV2 navigation, performance architecture, and static safety checks: valid
