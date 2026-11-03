@@ -118,6 +118,10 @@ npm run check
 
 Individual development validators remain available: `node tools/validate.mjs` and `node tools/benchmark.mjs`. Dev tooling is never shipped inside the installation archive.
 
+## Content licence
+
+The pet relationship, obedience and command house rules this module adds are homebrew gameplay content licensed **CC BY-SA 4.0**. The program source is **AGPL-3.0-or-later**; see the standard licence chapter below.
+
 ## Licence
 
 Copyright © 2026  [Daniel Braniewski](https://brani.dev/)
