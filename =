@@ -1,0 +1,110 @@
+
+> runyth-pet-command@1.3.1 check
+> node tools/check.mjs && npm test && npm run build && npm run verify:release /dev/null
+
+Validated 12 required files and 10 module sources.
+
+> runyth-pet-command@1.3.1 test
+> node --test tests/*.test.mjs
+
+✔ manager navigation never invokes Foundry's reserved tab action (0.587911ms)
+✔ manager navigation uses a validated module-owned action (0.108188ms)
+✔ manager tabs expose accessible tab semantics (0.135259ms)
+✔ manager tabs support roving keyboard navigation (0.211735ms)
+✔ every manager navigation button declares button type (0.072365ms)
+✔ manager can delegate random-behaviour target controls per relationship (0.110077ms)
+✔ player command panel exposes transient target-pool controls only when permitted (0.092886ms)
+✔ successful default attack rolls against the command target and restores prior targets (2.304597ms)
+✔ cancelled D&D 5e attack rolls are reported without losing prior targets (0.178283ms)
+✔ manifest entrypoint imports without an ES-module load failure (68.548612ms)
+✔ every program file starts with the standard two-line source notice (71.756395ms)
+✔ the LICENSE file is the full GNU Affero General Public License v3 (2.368376ms)
+✔ the README quotes the standard licence chapter (1.717975ms)
+✔ the changelog carries the 1.3.0 release section and its Runyth publication record (1.980228ms)
+✔ published surfaces name no foreign module and give no foreign credit (59.716715ms)
+✔ compatibility references stay technical and dependency-free (7.021348ms)
+✔ no private material lives on published source surfaces (110.877788ms)
+✔ localization helper uses Foundry's active language dictionary (0.43513ms)
+✔ localization helper provides an English fallback for a missing translation (0.133629ms)
+✔ HTML escaping is allocation-light and complete (0.194893ms)
+✔ manifest identity (0.665877ms)
+✔ manifest URL surfaces (0.13937ms)
+✔ package metadata agrees with the manifest (0.222156ms)
+✔ manifest runtime files (15.700021ms)
+✔ the localization namespace follows its module naming contract (8.019883ms)
+✔ obedience rises monotonically with XP (1.841154ms)
+✔ manual obedience overrides and can return to automatic (0.211925ms)
+✔ better relationships have lower DCs (0.213665ms)
+✔ d20 table always contains exactly twenty result slots (0.385888ms)
+✔ aggressive preset allocates more threatening results than docile preset (0.149ms)
+✔ roll total selects deterministic action slot (0.172482ms)
+✔ multiple owners create independent relationship records (0.467803ms)
+✔ merge import preserves existing and imported relationships (0.4227ms)
+✔ aggressive attitude makes attack easier and heel harder (0.407208ms)
+✔ target requirements distinguish quiet from attack (0.310912ms)
+✔ new pet profiles include party members in random target pools by default (0.207414ms)
+✔ relationship normalization adds delegated behaviour-target permission without altering older data (0.240167ms)
+✔ successful attack movement approaches the target without overlapping it (2.189263ms)
+✔ approach movement does not overshoot when already adjacent (0.313412ms)
+✔ movement uses Foundry pathfinding before TokenDocument.move when available (0.704149ms)
+✔ a constrained partial move is reported as movement instead of a false rejection (0.250308ms)
+✔ owner perspective filters active relationships to the selected owner Actor (6.06202ms)
+✔ owner perspective is unavailable to ordinary player clients (0.153681ms)
+✔ Assistant-GM-compatible isGM clients can issue a command only for the selected owner (0.307281ms)
+✔ owner perspective is additive to existing manager and player entrypoints (6.224747ms)
+✔ ordinary players cannot invoke the privileged owner-perspective command path (0.660317ms)
+✔ owner perspective rejects relationships belonging to another Actor (0.205475ms)
+✔ delegated random target pools are accepted only for explicitly permitted owner relationships (0.190334ms)
+✔ normalized configuration and state are reused on repeated reads (1.544028ms)
+✔ unchanged weighted d20 tables reuse their frozen allocation (0.500075ms)
+✔ store getters use cached canonical data and snapshots remain isolated (1.157402ms)
+✔ failed command sequence persists obedience and behaviour in one mutation (2.299351ms)
+✔ successful movement-capable command moves before one persistence transaction (2.660327ms)
+✔ failed command random reaction can select a party member and move toward them (1.578501ms)
+✔ downloadJson uses the Foundry v13 namespaced file utility (0.900023ms)
+✔ readJsonFile accepts file-like values without relying on a realm-specific File constructor (0.173432ms)
+✔ readJsonFile reports missing and malformed files as expected user input (1.103567ms)
+✔ default failure XP exceeds success XP (1.13861ms)
+✔ zero-weight actions receive no d20 slots when other weights exist (0.255098ms)
+✔ weighted allocation remains a valid d20 table across varied inputs (2.338624ms)
+✔ normalization clamps malformed configuration (0.278499ms)
+✔ terminated state and manual obedience survive normalization (0.827778ms)
+✔ future export schemas are rejected (0.377567ms)
+ℹ tests 63
+ℹ suites 0
+ℹ pass 63
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 364.149674
+
+> runyth-pet-command@1.3.1 build
+> node tools/build.mjs
+
+Packaged runyth-pet-command-v1.3.1-mod.zip (252139 bytes)
+Packaged runyth-pet-command-v1.3.1-src.zip (414861 bytes)
+Packaged runyth-pet-command-v1.3.1-doc.zip (68289 bytes)
+Wrote runyth-pet-command-v1.3.1-SHA256SUMS.txt
+Wrote runyth-pet-command-v1.3.1-build-report.json
+
+> runyth-pet-command@1.3.1 verify:release
+> node tools/verify-release.mjs /dev/null
+
+Packaged runyth-pet-command-v1.3.1-mod.zip (252139 bytes)
+Packaged runyth-pet-command-v1.3.1-src.zip (414861 bytes)
+Packaged runyth-pet-command-v1.3.1-doc.zip (68289 bytes)
+Wrote runyth-pet-command-v1.3.1-SHA256SUMS.txt
+Wrote runyth-pet-command-v1.3.1-build-report.json
+Packaged runyth-pet-command-v1.3.1-mod.zip (252139 bytes)
+Packaged runyth-pet-command-v1.3.1-src.zip (414861 bytes)
+Packaged runyth-pet-command-v1.3.1-doc.zip (68289 bytes)
+Wrote runyth-pet-command-v1.3.1-SHA256SUMS.txt
+Wrote runyth-pet-command-v1.3.1-build-report.json
+Packaging is byte-for-byte deterministic.
+Installable archive: name, manifest, and runtime file set verified.
+Source archive: scope, modes, and publication scan verified.
+Documentation archive: contract files verified.
+Checksum file verified.
+Build report verified.
+Release verification passed.
