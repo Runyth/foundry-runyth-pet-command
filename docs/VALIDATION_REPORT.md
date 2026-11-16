@@ -1,6 +1,6 @@
 # Validation Report
 
-Release: `1.3.0`  
+Release: `1.3.0`
 State schema: `3`
 
 Automated validation covers:
